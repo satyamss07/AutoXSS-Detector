@@ -115,3 +115,100 @@ xss_scan_results_YYYYMMDD_HHMMSS/
 | Real-time logs | ✅ | ⚠ Minimal |
 
 This tool is built specifically for **automation**, **speed**, and **clean reporting** — perfect for large-scale XSS analysis.
+
+📦 Installation Steps (For Users)
+
+Steps (For Users)
+## 🔧 Installation Guide
+
+Follow these steps to install and run **AutoXSS-Detector** on your system.
+
+---
+
+## 1️⃣ Install Python 3.8+  
+Make sure Python is installed:  
+
+```bash
+python --version
+```
+If not installed, download it from:
+https://www.python.org/downloads/
+
+2️⃣ Clone the Repository
+```bash
+git clone https://github.com/satyamss07/AutoXSS-Detector.git
+cd AutoXSS-Detector
+```
+3️⃣ Install Required Python Packages
+Install dependencies from requirements.txt:
+```bash
+pip install -r requirements.txt
+```
+4️⃣ Install xsscrapy (Required Engine)
+```bash
+pip install xsscrapy
+```
+If xsscrapy requires lxml on your system, install:
+```bash
+pip install lxml
+```
+5️⃣ Run AutoXSS-Detector
+```bash
+python AutoXSS-Detector.py
+```
+This will open the GUI interface.
+
+6️⃣ Load URLs File
+Prepare a .txt file like:
+```bash
+https://example.com/?id=1
+https://test.com/search?q=test
+```
+Then load it using the Browse button.
+
+7️⃣ Start Scan
+Click:
+```bash
+▶ Start Scan
+```
+The tool will:
+
+-Run multi-threaded XSS scanning,
+-Collect results,
+-Parse & remove duplicates,
+-Generate a final report
+
+8️⃣ View Output Reports
+
+After completion, open the generated folder:
+```bash
+xss_scan_results_YYYYMMDD_HHMMSS/
+```
+Inside it you will find:
+```bash
+xss_final_report.txt
+xsscrapy_outputs/
+```
+🎉 Done!
+
+You are now ready to analyze XSS vulnerabilities with full automation.
+
+## ✅ Tips & Notes
+
+- Make sure you are using **Python 3.8+** for best compatibility.  
+- All required dependencies are listed in **requirements.txt** — install them using:  
+  ```bash
+  pip install -r requirements.txt
+  ```
+  This tool uses xsscrapy as its scanning engine, so ensure it is installed:
+  ```bash
+  pip install xsscrapy
+  ```
+  When scanning large URL lists, the multi-threaded scanning engine significantly improves performance compared to manual or single-threaded scanning.
+
+
+
+
+
+
+
