@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+env/
+venv/
+ENV/
+.venv/
+
+# Logs & cache
+*.log
+*.tmp
+*.cache
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Tool outputs
+xss_scan_results_*/
+*.txt
+
+# Ignore xsscrapy temporary files
+*output*.txt
+
+# IDE folders
+.vscode/
+.idea/
