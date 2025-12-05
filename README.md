@@ -1,4 +1,5 @@
 # 🚀 AutoXSS-Detector  
+![AutoXSS-Detector](assets/photo.png)
 ### Advanced Automated XSS Scanner with GUI + Smart Reporting
 
 Cross-Site Scripting (**XSS**) is a common and dangerous web vulnerability that allows attackers to inject malicious JavaScript into web pages viewed by others.  
